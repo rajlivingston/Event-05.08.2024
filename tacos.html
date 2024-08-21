@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /* Navbar */
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3f3f3f;
+        padding: 10px;
+    }
+
+    .nav h1 {
+        margin: 10px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .nav span {
+        color: yellow;
+    }
+
+    .nav-links {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        padding: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav button {
+        color: #fff;
+        border-radius: 22px;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        margin-left: 20px;
+    }
+
+    /* Bg-img */
+
+    .bg-img {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 550px;
+    }
+
+    .bg-img::before {
+        content: "";
+        position: absolute;
+        background-image: url("images/taco_1.avif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(50%);
+        z-index: -1;
+    }
+
+    /* Bg-img content */
+
+    .content {
+        color: white;
+        display: flex;
+    }
+
+    #img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .logo {
+        align-items: center;
+        display: flex;
+    }
+
+    .content h2 {
+        margin-top: 40px;
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-right: 100px;
+        float: left;
+        
+    }
+
+    .content span {
+        color: yellow;
+        font-size: 40px;
+    }
+
+
+    .content h1 {
+        font-weight: 400;
+        font-size: 300px;
+        margin-top: 120px;
+        margin-left: 120px;
+        margin-right: 50px;
+        float: right;
+    }
+   
+    /* Celebration */
+
+    .celebration {
+        margin-bottom: 70px;
+    }
+
+    .celebration span {
+        color: yellow;
+        font-weight: 500;
+    }
+
+    .celebration h2 {
+        font-weight: 400;
+        font-size: 50px;
+        margin-left: 120px;
+    }
+
+    .celebration-content {
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 60%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .celebration-text {
+        width: 40%;
+        font-size: larger;
+        padding: 0 15px;
+        margin-left: 120px;
+    }
+
+    /* Interior */
+
+    .bg-interior {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 550px;
+    }
+
+    .bg-interior::before {
+        content: "";
+        position: absolute;
+        background-image: url("images/dining.avif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(50%);
+        z-index: -1;
+    }
+
+    .interior-content {
+        margin-left: 200px;
+        margin-top: 150px;
+        color: white;
+    }
+
+    .interior-content h1 {
+        color: yellow;
+        font-size: 70px;
+        font-weight: 250;
+    }
+
+    .interior-content h4 {
+        font-weight: 300;
+    }
+
+    .interior-text {
+        margin-right: 200px;
+        text-align: left;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="container nav">
+        <div class="logo">
+            <img src="images\logo.jpg" alt="" id="img">
+            <h1>Cool! <span><i>TACO</i></span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="#">Buy taco</a>
+            <a href="#">Contact</a>
+            <a href="#">Menu</a>
+        </div>
+        <button>Send message</button>
+    </div>
+
+    <!-- Bg-image & it's content -->
+
+    <div class="bg-img">
+        <div class="content">
+            <div>
+                <h1>TACO</h1>
+            </div>
+            <div>
+                <h2>Get spicy <span><i>shrimp mexican <br> tacos</i></span> with hot mango <br> gravy!</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebration -->
+
+    <div class="celebration">
+        <h2><span><i>The celebration</i></span> of mexico's <br> vibrant history and culture</h2>
+        <div class="celebration-content">
+            <div class="celebration-text">
+                <h4>
+                    Centuries of conquest,independence and revolution have
+                    left us with a diverse culinary heritage and a generous
+                    appetite for festivity
+                </h4>
+                <h5>
+                    Here you will find authentic, homemade. Central mexican
+                    cuisine in the warm, gracious atmosphere of a mexican
+                    country estate. Our Bar features a wide selection of
+                    tequilas and margaritas, as well as a unique Menu
+                </h5>
+            </div>
+            <img src="images\taco_2.avif" alt="">
+        </div>
+    </div>
+
+    <!-- Interior -->
+
+    <div class="bg-interior">
+        <div class="interior-content">
+            <div>
+                <h1>INTERIOR</h1>
+            </div>
+            <div class="interior-text">
+                <h3>
+                    Our Mexican restaurent is livid , bright and festive not just in a
+                    culinary way, but in regard to our atmosphere and interior too!
+                </h3>
+                <p>
+                    Each evening we host a live mariachi band and each day our interior theme changes to represent some
+                    Mexicon state or a city , like Mexico, Juarez, California and so much more...
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
